@@ -90,7 +90,3 @@ key = key[Math.floor(Math.random() * key.length)];
 let value = bibleBooks[key];
 value = value[Math.floor(Math.random() * value.length)];
 console.log('Please read' + ' ' + key + ' ' + value);
-
-
-
-
