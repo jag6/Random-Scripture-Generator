@@ -84,17 +84,8 @@ let bibleBooks = {"创世纪": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1
 "约翰一书": [1, 2, 3, 4, 5], "约翰二书": [1], "约翰三书": [1], "犹大书": [1],
 "启示录": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]}
 
-function click(){
-    let key = Object.keys(bibleBooks);
-    key = key[Math.floor(Math.random() * key.length)];
-    let value = bibleBooks[key];
-    value = value[Math.floor(Math.random() * value.length)];
-    document.getElementById("scripture").innerHTML= "请您读：" + ' ' + key + '第'+ value + '章';
-}
-
-document.querySelector('#btn').addEventListener('click', () => {
-    click()
-})
-
-
-
+let key = Object.keys(bibleBooks);
+key = key[Math.floor(Math.random() * key.length)];
+let value = bibleBooks[key];
+value = value[Math.floor(Math.random() * value.length)];
+console.log("请您读：" + ' ' + key + '第'+ value + '章');
