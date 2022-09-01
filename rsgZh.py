@@ -91,4 +91,4 @@ book_name = (bible_books[0])
 chapter = (bible_books[1])
 chapter = r.sample(chapter, 1)[0]
 
-reading = print("请您读：", book_name, chapter)
+print("请您读：", book_name, chapter)
