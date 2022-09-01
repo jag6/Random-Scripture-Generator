@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# Program to pick which Scripture to read
-
 import random as r
 from random import sample as s
 
