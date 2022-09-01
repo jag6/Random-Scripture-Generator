@@ -1,5 +1,4 @@
 # Random-Scripture-Generator
-Random Scripture Generator
 
 This program will randomly select a book and accompanying chapter from the Bible. 
 The program logic can be used to iterate over any type of key value pair that you desire, so feel free to customize the generator with a different set of data.
