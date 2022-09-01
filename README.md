@@ -10,4 +10,4 @@ python rsg.py (use python3 rsg.py if python rsg.py doesn't work)
 or
 node rsg.js
 
-Thanks!
+A Chinese version has only been included.
