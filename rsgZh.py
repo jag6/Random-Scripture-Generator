@@ -85,10 +85,15 @@ bible_books = {"创世纪": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
 "约翰一书": [1, 2, 3, 4, 5], "约翰二书": [1], "约翰三书": [1], "犹大书": [1],
 "启示录": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]}
 
-bible_books = s(bible_books.items(), 1)
-bible_books = r.choice(list(bible_books))
-book_name = (bible_books[0])
-chapter = (bible_books[1])
-chapter = r.sample(chapter, 1)[0]
+def get_scripture():
+    books = s(bible_books.items(), 1)
+    books = r.choice(list(books))
+    book_name = (books[0])
+    chapter = (books[1])
+    chapter = r.sample(chapter, 1)[0]
 
-print("请您读：", book_name, chapter)
+    print("请您读：", book_name, chapter)
+
+# 显示5节经文    
+for i in range(5):
+    get_scripture()    

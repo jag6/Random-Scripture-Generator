@@ -85,10 +85,15 @@ bible_books = {"Genesis": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
               "1 John": [1, 2, 3, 4, 5], "2 John": [1], "3 John": [1], "Jude": [1],
              "Revelation": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]}
 
-bible_books = s(bible_books.items(), 1)
-bible_books = r.choice(list(bible_books))
-book_name = (bible_books[0])
-chapter = (bible_books[1])
-chapter = r.sample(chapter, 1)[0]
+def get_scripture():
+    books = s(bible_books.items(), 1)
+    books = r.choice(list(books))
+    book_name = (books[0])
+    chapter = (books[1])
+    chapter = r.sample(chapter, 1)[0]
 
-print('Please read', book_name, chapter)
+    print('Please read', book_name, chapter)
+    
+# get 5 scriptures at once    
+for i in range(5):
+    get_scripture()

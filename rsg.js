@@ -84,8 +84,15 @@ let bibleBooks = {"Genesis": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
               "1 John": [1, 2, 3, 4, 5], "2 John": [1], "3 John": [1], "Jude": [1],
              "Revelation": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]}
 
-let key = Object.keys(bibleBooks);
-key = key[Math.floor(Math.random() * key.length)];
-let value = bibleBooks[key];
-value = value[Math.floor(Math.random() * value.length)];
-console.log('Please read' + ' ' + key + ' ' + value);
+const getScripture = () => {
+    let key = Object.keys(bibleBooks);
+    key = key[Math.floor(Math.random() * key.length)];
+    let value = bibleBooks[key];
+    value = value[Math.floor(Math.random() * value.length)];
+    console.log('Please read' + ' ' + key + ' ' + value);
+}
+
+//get 5 scriptures at once
+for (i = 0; i < 5; i++) {
+    getScripture();
+}
